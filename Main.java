@@ -17,9 +17,10 @@ public class Main {
      
 
      Cliente cliente1 = new Cliente("Kevin","20",miEmpresa);
-     Cliente.agregarCliente(cliente1);
+     agregarCliente(cliente1);
 
-    clientes.forEach(System.out::println);
+     
+    
        
 
     List<Empleado> emp = miEmpresa.getEmpleados();
@@ -32,10 +33,17 @@ public class Main {
             System.out.println("Nombre de empleado "+empleado.getNombre() +"   Sueldo : "+empleado.getSueldo());
         }
        
+        for (Cliente cliente : clientes) {
+            System.out.println("Nombre del cliente "+cliente.getNombre()+" Edad:"+cliente.getEdad()+" Empresa:"+ miEmpresa.getNombre() );
+        }
+
     }
 
+    public static void agregarCliente(Cliente Objcliente){
+        
+        clientes.add(Objcliente);
 
-   
+    }
 
 
 }

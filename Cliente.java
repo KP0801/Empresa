@@ -32,18 +32,14 @@ public class Cliente {
     public void setEmpresa(Empresa empresa){
         this.empresa=empresa;
     }
+    
 
     public  Empresa  getEmpresa(){
         return empresa;
     }
 
     
-    public static void agregarCliente(Cliente Objcliente){
-        
-        clientes.add(Objcliente);
-
-    }
-
+    
     public String toString(){
         return nombre;
     }
